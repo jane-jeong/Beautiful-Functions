@@ -1,0 +1,101 @@
+html {
+    font-size: 16px; /* px 은 'pixels' 를 의미합니다: 기본 글자 크기는 현재 10 pixels 높이입니다 */
+    font-family: 'Noto Sans KR', sans-serif;
+    /* background-color: #ffffff; 페이지 전체의 배경색을 지정한다 */ 
+}
+
+body {
+margin : 0;
+background-size: 80px 80px;
+background-color: #111111;
+background-image:
+    linear-gradient(to right, lightgrey 1px, transparent 1px),
+    linear-gradient(to bottom, lightgrey 1px, transparent 1px); 
+}
+
+.navbar {
+    display: flex ; 
+    justify-content: space-between ; 
+    align-items : center;
+    background-color: #000000;
+    padding:8px 20px ; 
+}
+
+.navbar_logo:hover {
+    background-color : #db087c;
+    border-radius: 1px;
+}
+
+a {
+    font-size: 24px; 
+    line-height: 2px; /* 문장 사이 긴격 */ 
+    letter-spacing: 1.5px; /* 자간 */ 
+    color: white;
+    font-family: 'Castoro', serif;
+    }
+
+.navbar_time {
+    display: flex; 
+    list-style: none; 
+    padding-left: 0; 
+}
+
+.navbar_time li {
+    padding: 8px 20px;
+}
+
+a.time {
+font-size: 12px;    
+line-height: 2s; /* 문장 사이 긴격 */ 
+letter-spacing: 1.5px; /* 자간 */ 
+color: #ffffff;
+font-family: 'Noto Sans KR', sans-serif;
+}
+
+.navbar_about { 
+    list-style: none; 
+    color: white; 
+    display: flex; 
+    padding-left: 0; 
+}
+
+a.about {
+    font-size: 12px;    
+    line-height: 2px; /* 문장 사이 긴격 */ 
+    letter-spacing: 1.5px; /* 자간 */ 
+    color: #ffffff;
+    font-family: 'Noto Sans KR', sans-serif;
+    }
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+    .navbar { 
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 8px 24px; 
+    }
+
+    .navbar_logo {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_time {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+    }
+
+    .navbar_time li { 
+        width: 100% ; 
+        text-align: center;
+    }
+
+    .navbar_about {
+        justify-content: center; 
+        width: 100%; 
+        list-style: none; 
+    }
+}
