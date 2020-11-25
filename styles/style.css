@@ -22,7 +22,7 @@ background-image:
 }
 
 .navbar_logo:hover {
-    background-color : #db087c;
+    background-color:#db087c;
     border-radius: 1px;
 }
 
@@ -50,6 +50,11 @@ line-height: 2s; /* 문장 사이 긴격 */
 letter-spacing: 1.5px; /* 자간 */ 
 color: #ffffff;
 font-family: 'Noto Sans KR', sans-serif;
+}
+
+a.time::selection {
+    background-color:#db087c;
+    color: black;
 }
 
 .navbar_about { 
