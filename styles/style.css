@@ -13,6 +13,7 @@ background-image:
     linear-gradient(to bottom, lightgrey 1px, transparent 1px); 
 }
 
+/* --------------------navigation bar--------------------*/
 .navbar {
     display: flex ; 
     justify-content: space-between ;
@@ -28,7 +29,7 @@ background-image:
     letter-spacing: 1.5px; /* 자간 */ 
     color: white;
     font-family: 'Castoro', serif;
-    padding-left: 30px;
+    margin-left: 30px;
     }
     
 /* navbar_logo */ 
@@ -46,8 +47,8 @@ background-image:
 
 a.message {
 font-size: 14px;    
-line-height: 2px; /* 문장 사이 긴격 */ 
-letter-spacing: 1.5px; /* 자간 */ 
+line-height: 2px; 
+letter-spacing: 1.5px; 
 color: #ffffff;
 font-family: 'Noto Sans KR', sans-serif;
 }
@@ -56,7 +57,6 @@ a.message::selection {
     background-color:#ffe600;
     color: #000000;
 }
-/* -- */ 
 
 /* navbar_today */ 
 .navbar_today {
@@ -66,8 +66,8 @@ a.message::selection {
 
 .navbar_today li {
     font-size: 14px;    
-    line-height: 2px; /* 문장 사이 긴격 */ 
-    letter-spacing: 1.5px; /* 자간 */ 
+    line-height: 2px; 
+    letter-spacing: 1.5px; 
     color: #ffffff;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -76,7 +76,6 @@ a#today::selection {
     background-color:#42ff71;
     color: #000000;
 }
-/* - */
 
 /* navbar_time */ 
 .navbar_time {
@@ -121,7 +120,7 @@ a#counttime::selection {
 }
 
 
-/* 반응형 */
+/* navbar 반응형 작업 */
 @media screen and (max-width: 768px) {
     .navbar { 
         flex-direction: column; 
@@ -181,7 +180,7 @@ a#counttime::selection {
 }
 
 
-/* footter */
+/* --------------------footer--------------------*/
 .footer {
     position: absolute; 
     display: flex ;
@@ -196,8 +195,8 @@ a#counttime::selection {
 
 .footer footer {
     position: absolute;
-    right: 20px;
-
+    left: 20px;
     color: #999999;
     filter: blur(0.1px);
 }
+/* ----------------------------------------------*/

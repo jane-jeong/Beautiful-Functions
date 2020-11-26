@@ -8,14 +8,14 @@
 var x = setInterval(function() {
     let today = new Date();   
     let year = today.getFullYear(); // 년도
-    let month = today.getMonth() + 1;  // 월
+    let month = today.toLocaleString('en-EN', { month: 'short' }) // 문자 월
     let date = today.getDate();  // 날짜
     // let day = today.getDay();  // 요일
     let hours = today.getHours(); // 시
     let minutes = today.getMinutes();  // 분
     let seconds = today.getSeconds();  // 초
     // let milliseconds = today.getMilliseconds(); // 밀리초
-    document.getElementById("today").innerHTML = 'Today: ' + year + '/' + month + '/' + date + '   ' + hours + ':' + minutes + ':' + seconds 
+    document.getElementById("today").innerHTML = 'Time now : ' + year + ' ' + month + ' ' + date + '   ' + hours + ':' + minutes + ':' + seconds 
 }, 1000);
 
 
@@ -39,7 +39,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("counttime").innerHTML = "Since my birth: " + days + "d " + hours + "h "
+  document.getElementById("counttime").innerHTML = "Since { my } birth : " + days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
