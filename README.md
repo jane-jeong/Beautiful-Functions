@@ -1,1 +1,1 @@
-# janejeong.me
+# Beautiful functions
