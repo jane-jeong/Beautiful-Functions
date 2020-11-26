@@ -26,22 +26,6 @@
 - p>lorem4 : <p>Lorem ipsum dolor sit.</p> 더미 텍스트 단어 4개 생성
 
 
-## 크기 단위
-- height : 100% - 해당 객체가 속한 부모 크기의 100%를 쓰겠다 (부모 크기가 지정되어 있어야 함) 
-- height : 100vh - 부모 크기가 지정되어 있지 않아도 전체 크기의 100% 다 쓰겠다 
-- height : 100vh - 부모 크기가 지정되어 있지 않아도 전체 크기의 80%를 쓰겠다 
-
-## 컬러 유틸리티
-- COLOR TOOL : https://material.io/resources/color/#!/?view.left=0&view.right=0
-
-
-
-
-
-
-
-
-
 # HTML Tags Full Name 
 - a (href) : Anchor (Hypertext Refernce)
 - id	: Identification
@@ -74,6 +58,7 @@
 - pre	: Preformatted text
 - &nbsp;	: Non Breaking Spaces; 공백; (-> HTML entity)
 
+
 # CSS - selectors 
 ## 참고 
 [ MDN - CSS selectors ]
@@ -82,7 +67,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 
 [ MDN - CSS Properties References ]
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference
-
 
 
 # CSS 레이아웃 - display
@@ -211,8 +195,50 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_C
 https://flexboxfroggy.com/
 
 
+# 반응형 Fluid Layout 
 
-# 메타데이터
+[ 참고 ] 
+https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
+
+https://www.internetingishard.com/
+
+[ 반응형 레퍼런스 사이트 ] 
+- githup page 
+- klienboost 
+- magic leaf 
+
+## 1. Fluid Layout을 위한 속성과 크기/비율 단위
+- flex 속성 값을 활용해서 기본적인 반응형 레이아웃의 뼈대를 만들어 놓는다
+- flex grid, flexbox, %, vw(viewport width), vh(viewport height) 
+- 고정된 크기 값인 px(pixel) 사용은 지양한다  
+- flexbox 개념 복습 
+
+### 크기 단위
+- height : 100%; - 해당 객체가 속한 부모 크기의 100%를 쓰겠다 (부모 크기가 지정되어 있어야 함) 
+- height : 100vh; - 부모 크기가 지정되어 있지 않아도 전체 크기의 100% 다 쓰겠다 
+- height : 100vh; - 부모 크기가 지정되어 있지 않아도 전체 크기의 80%를 쓰겠다 
+ 
+## 2. 어느 정도 크기가 되었을 때 컨텐츠를 재배치하는 Media Queries 
+- CSS의 Media Queries를 활용해서 레이아웃의 관절(break points)마다 레이아웃을 재배치해준다 ( Desktop - Tablet - Mobile) 
+- Desktop: 1024+
+- Tablet: 1023~768
+- Mobile: 320~480px 
+
+### media prefix 쓰고 적어도 스크린이 800px 이상일 때만 컨테이너가 50% 차지하게 하기
+@media screen and (min-width: 800px) {
+    .container {
+          width: 50%; 
+    }
+}
+
+- screen : print / all 
+- and : not / only / ,
+- min-width나 max-width로 충분히 만들 수 있음 
+ 
+[참고: MDN - Using media queries ] https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+
+
+# HTML 메타데이터
 <meta charset="utf-8">
 <meta name="author" content="Chris Mills">
 <meta name="description" content="The MDN Learning Area aims to provide
@@ -227,18 +253,6 @@ and HTML5 Apps. It also documents Mozilla products, like Firefox OS.">
 <meta property="og:title" content="Mozilla Developer Network">
 <meta name="twitter:title" content="Mozilla Developer Network">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-# 파비콘 - 다양한 디바이스에 맞는 파비콘을 모두 적용한다 
-<!-- third-generation iPad with high-resolution Retina display: -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
-<!-- iPhone with high-resolution Retina display: -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
-<!-- first- and second-generation iPad: -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
-<!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-<link rel="apple-touch-icon-precomposed" href="https://developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
-<!-- basic favicon -->
-<link rel="shortcut icon" href="https://developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
 
 
 # 언어 설정하기 (전체 문서 언어 설정 / 개별 언어 설정) 
@@ -255,6 +269,20 @@ and HTML5 Apps. It also documents Mozilla products, like Firefox OS.">
   </body>
 </html>
 
+
+# 파비콘 - 다양한 디바이스에 맞는 파비콘을 모두 적용한다 
+<!-- third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+<!-- iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+<!-- first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+<!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="https://developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+<!-- basic favicon -->
+<link rel="shortcut icon" href="https://developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+
+
 # 격자무늬 배경 만들기 - CSS
 body {
   background-size: 40px 40px;
@@ -263,17 +291,24 @@ body {
     linear-gradient(to bottom, grey 1px, transparent 1px);
 }
 
+
 # 도트무늬 배경 만들기 - CSS
 body {
   background-size: 40px 40px;
   background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
 }
 
-# 강조
+
+# HTML 강조
 접근성 고려한 강조 : <em></em> / <strong></strong>
 접근성 관련 없는 강조 : <u></u>(밑줄), <i></i>(이탤릭), <b></b>(볼드)
+
 
 # 이미지에 링크 넣기 
 <a href="https://www.mozilla.org/en-US/">
   <img src="mozilla-image.png" alt="mozilla logo that links to the mozilla homepage">
 </a>
+
+
+# 컬러 유틸리티
+- COLOR TOOL : https://material.io/resources/color/#!/?view.left=0&view.right=0
