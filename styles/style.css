@@ -1,7 +1,7 @@
+/* --------------------Start of html and body--------------------*/
 html {
-    font-size: 12px; /* px 은 'pixels' 를 의미합니다: 기본 글자 크기는 현재 10 pixels 높이입니다 */
+    font-size: 12px;  
     font-family: 'Noto Sans KR', sans-serif;
-    /* background-color: #111111; */
 }
 
 body {
@@ -13,7 +13,11 @@ background-image:
     linear-gradient(to bottom, lightgrey 1px, transparent 1px); 
 }
 
-/* --------------------navigation bar--------------------*/
+a { text-decoration:none }
+/* --------------------End of html and body--------------------*/
+
+
+/* --------------------Start of navigation bar--------------------*/
 .navbar {
     display: flex ; 
     justify-content: space-between ;
@@ -27,7 +31,16 @@ background-image:
     font-size: 22px; 
     line-height: 2px; /* 문장 사이 긴격 */ 
     letter-spacing: 1.5px; /* 자간 */ 
-    color: white;
+    color: rgb(255, 217, 0);
+    font-family: 'Castoro', serif;
+    margin-left: 30px;
+    }
+
+.navbar_logo a span {
+    font-size: 22px; 
+    line-height: 2px; /* 문장 사이 긴격 */ 
+    letter-spacing: 1.5px; /* 자간 */ 
+    color: rgb(255, 255, 255);
     font-family: 'Castoro', serif;
     margin-left: 30px;
     }
@@ -116,11 +129,11 @@ a#counttime::selection {
     }
 
 .navbar_about a:hover {
-    background-color:#d633ff;
+    background-color:#8400ff;
 }
 
 
-/* navbar 반응형 작업 */
+/* -----navbar 반응형 작업----- */
 @media screen and (max-width: 768px) {
     .navbar { 
         flex-direction: column; 
@@ -178,9 +191,9 @@ a#counttime::selection {
         padding: 8px 20px; 
     }
 }
+/* --------------------End of navigation bar--------------------*/
 
-
-/* --------------------footer--------------------*/
+/* --------------------Start of footer--------------------*/
 .footer {
     position: absolute; 
     display: flex ;
@@ -199,4 +212,9 @@ a#counttime::selection {
     color: #999999;
     filter: blur(0.1px);
 }
-/* ----------------------------------------------*/
+
+.footer footer small::selection {
+    background-color:#ac52ff;
+    color: #000000;
+}
+/* -----------------------ENd of footer------------------------*/

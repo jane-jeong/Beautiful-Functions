@@ -15,7 +15,7 @@ var x = setInterval(function() {
     let minutes = today.getMinutes();  // 분
     let seconds = today.getSeconds();  // 초
     // let milliseconds = today.getMilliseconds(); // 밀리초
-    document.getElementById("today").innerHTML = 'Time now : ' + year + ' ' + month + ' ' + date + '   ' + hours + ':' + minutes + ':' + seconds 
+    document.getElementById("today").innerHTML = 'Time now { here } : ' + year + ' ' + month + ' ' + date + '   ' + hours + ':' + minutes + ':' + seconds 
 }, 1000);
 
 

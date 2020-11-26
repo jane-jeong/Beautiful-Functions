@@ -59,3 +59,5 @@
 - navbar에서 Time now { there } : 에서 { there } 을 누르면 사용자가 알고 싶은 위치의 시간을 알 수 있음 (default 값은 사용자의 현재  세션 시간으로 자동 설정됨. 다시 현재 세션 시간으로 자동 설정하고 싶으면 { there }을 누르면 초기화 버튼을 눌러 현재 세션 시간으로 재설정할 수 있음. 
 - navbar에서 시간이 흐를 때 '초(second)'의 문자 색이 계속해서 달라짐 
 - 로고 옆의 welcome message(현재는 Design / Develop / Data Science)가 전광판처럼 흐르면서 사라졌다가 나왔다함 
+
+
