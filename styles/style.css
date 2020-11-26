@@ -21,6 +21,7 @@ background-image:
     padding:8px 20px ; 
 }
 
+/* navbar_logo */ 
 .navbar_logo:hover {
     background-color:#db087c;
     border-radius: 1px;
@@ -34,6 +35,32 @@ a {
     font-family: 'Castoro', serif;
     }
 
+/* navbar_today */ 
+.navbar_today {
+    display: flex; 
+    list-style: none; 
+    padding-left: 0; 
+}
+
+.navbar_today li {
+    padding: 8px 20px;
+}
+
+a#today {
+font-size: 12px;    
+line-height: 2s; /* 문장 사이 긴격 */ 
+letter-spacing: 1.5px; /* 자간 */ 
+color: #ffffff;
+font-family: 'Noto Sans KR', sans-serif;
+}
+
+a#today::selection {
+    background-color:#db087c;
+    color: black;
+}
+/* - */
+
+/* navbar_time */ 
 .navbar_time {
     display: flex; 
     list-style: none; 
@@ -44,7 +71,7 @@ a {
     padding: 8px 20px;
 }
 
-a.time {
+a#counttime {
 font-size: 12px;    
 line-height: 2s; /* 문장 사이 긴격 */ 
 letter-spacing: 1.5px; /* 자간 */ 
@@ -52,10 +79,33 @@ color: #ffffff;
 font-family: 'Noto Sans KR', sans-serif;
 }
 
-a.time::selection {
+a#counttime::selection {
     background-color:#db087c;
     color: black;
 }
+/* - */
+
+/* navbar_message */ 
+
+.navbar_message {
+    display: flex; 
+    list-style: none; 
+    padding-left: 0; 
+}
+
+a.message {
+font-size: 12px;    
+line-height: 2s; /* 문장 사이 긴격 */ 
+letter-spacing: 1.5px; /* 자간 */ 
+color: #ffffff;
+font-family: 'Noto Sans KR', sans-serif;
+}
+
+a.message::selection {
+    background-color:#db087c;
+    color: black;
+}
+/* -- */ 
 
 .navbar_about { 
     list-style: none; 
@@ -76,6 +126,8 @@ a.about::selection {
     background-color:#db087c;
     color: black;
 }
+
+
 /* 반응형 */
 @media screen and (max-width: 768px) {
     .navbar { 
