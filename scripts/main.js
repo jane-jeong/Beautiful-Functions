@@ -1,3 +1,4 @@
+  
 /*
 사이에 있는 모든 것은 주석입니다.
 */
@@ -14,7 +15,7 @@ var x = setInterval(function() {
     let minutes = today.getMinutes();  // 분
     let seconds = today.getSeconds();  // 초
     // let milliseconds = today.getMilliseconds(); // 밀리초
-    document.getElementById("today").innerHTML = 'today: ' + year + '/' + month + '/' + date + '   ' + hours + ':' + minutes + ':' + seconds 
+    document.getElementById("today").innerHTML = 'Today: ' + year + '/' + month + '/' + date + '   ' + hours + ':' + minutes + ':' + seconds 
 }, 1000);
 
 
@@ -47,7 +48,3 @@ var x = setInterval(function() {
     document.getElementById("counttime").innerHTML = "EXPIRED";
   }
 }, 1000);
-
-
-
-
