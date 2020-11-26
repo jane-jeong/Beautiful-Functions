@@ -1,7 +1,5 @@
   
-/*
-사이에 있는 모든 것은 주석입니다.
-*/
+/* Beautiful Function - JavaScript*/
 'use strinct'; 
 
 /* Today */
@@ -17,7 +15,6 @@ var x = setInterval(function() {
     // let milliseconds = today.getMilliseconds(); // 밀리초
     document.getElementById("today").innerHTML = 'Time now { here } : ' + year + ' ' + month + ' ' + date + '   ' + hours + ':' + minutes + ':' + seconds 
 }, 1000);
-
 
 /* Countup Timer */
 // Set the date we're counting down to

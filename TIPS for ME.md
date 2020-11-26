@@ -20,11 +20,10 @@
 - p{hello} : ( { } ) p 태그 안에 텍스트 입력
 - div>(header>ul>li*2>a)+footer>p
 - div.container>div.item.item${$}*10 : $는 자동으로 숫자 입력됨 (여기서는 1~10)
-- p{hello} : 
-- p.class${item $}*5 
-- p>lorem 
-- p>lorem4 
-- section>div>li>li 
+- p{hello} : <p>hello</p>
+- p.class${item $}*5 : <p class="class1">item 1</p> 1~5까지 자동으로 숫자 들어가고 5개 반복 
+- p>lorem : <p>Lorem ipsum dolor ...</p> 더미 텍스트 한 단락 생성 
+- p>lorem4 : <p>Lorem ipsum dolor sit.</p> 더미 텍스트 단어 4개 생성
 
 
 ## 크기 단위
