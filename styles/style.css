@@ -1,7 +1,7 @@
 html {
-    font-size: 16px; /* px 은 'pixels' 를 의미합니다: 기본 글자 크기는 현재 10 pixels 높이입니다 */
+    font-size: 12px; /* px 은 'pixels' 를 의미합니다: 기본 글자 크기는 현재 10 pixels 높이입니다 */
     font-family: 'Noto Sans KR', sans-serif;
-    /* background-color: #ffffff; 페이지 전체의 배경색을 지정한다 */ 
+    /* background-color: #111111; */
 }
 
 body {
@@ -15,48 +15,66 @@ background-image:
 
 .navbar {
     display: flex ; 
-    justify-content: space-between ; 
+    justify-content: space-between ;
     align-items : center;
     background-color: #000000;
-    padding:8px 20px ; 
+    height: 92px;
+    filter: blur(0.1px);
 }
 
+.navbar_logo a {
+    font-size: 22px; 
+    line-height: 2px; /* 문장 사이 긴격 */ 
+    letter-spacing: 1.5px; /* 자간 */ 
+    color: white;
+    font-family: 'Castoro', serif;
+    padding-left: 30px;
+    }
+    
 /* navbar_logo */ 
 .navbar_logo:hover {
     background-color:#db087c;
     border-radius: 1px;
 }
 
-a {
-    font-size: 24px; 
-    line-height: 2px; /* 문장 사이 긴격 */ 
-    letter-spacing: 1.5px; /* 자간 */ 
-    color: white;
-    font-family: 'Castoro', serif;
-    }
-
-/* navbar_today */ 
-.navbar_today {
+/* navbar_message */ 
+.navbar_message {
     display: flex; 
     list-style: none; 
-    padding-left: 0; 
+
 }
 
-.navbar_today li {
-    padding: 8px 20px;
-}
-
-a#today {
-font-size: 12px;    
-line-height: 2s; /* 문장 사이 긴격 */ 
+a.message {
+font-size: 14px;    
+line-height: 2px; /* 문장 사이 긴격 */ 
 letter-spacing: 1.5px; /* 자간 */ 
 color: #ffffff;
 font-family: 'Noto Sans KR', sans-serif;
 }
 
+a.message::selection {
+    background-color:#ffe600;
+    color: #000000;
+}
+/* -- */ 
+
+/* navbar_today */ 
+.navbar_today {
+    display: flex; 
+    list-style: none; 
+}
+
+.navbar_today li {
+    font-size: 14px;    
+    line-height: 2px; /* 문장 사이 긴격 */ 
+    letter-spacing: 1.5px; /* 자간 */ 
+    color: #ffffff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 a#today::selection {
-    background-color:#db087c;
-    color: black;
+    background-color:#42ff71;
+    color: #000000;
 }
 /* - */
 
@@ -68,63 +86,38 @@ a#today::selection {
 }
 
 .navbar_time li {
-    padding: 8px 20px;
-}
-
-a#counttime {
-font-size: 12px;    
-line-height: 2s; /* 문장 사이 긴격 */ 
-letter-spacing: 1.5px; /* 자간 */ 
-color: #ffffff;
-font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;    
+    line-height: 2px;  
+    letter-spacing: 1.5px; 
+    color: #ffffff;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 a#counttime::selection {
-    background-color:#db087c;
-    color: black;
-}
-/* - */
-
-/* navbar_message */ 
-
-.navbar_message {
-    display: flex; 
-    list-style: none; 
-    padding-left: 0; 
+    background-color:#00e1ff;
+    color: #000000;
 }
 
-a.message {
-font-size: 12px;    
-line-height: 2s; /* 문장 사이 긴격 */ 
-letter-spacing: 1.5px; /* 자간 */ 
-color: #ffffff;
-font-family: 'Noto Sans KR', sans-serif;
-}
 
-a.message::selection {
-    background-color:#db087c;
-    color: black;
-}
-/* -- */ 
-
+/* navbar_about */
 .navbar_about { 
     list-style: none; 
-    color: white; 
+    color: #ffffff; 
     display: flex; 
-    padding-left: 0; 
+    padding-right: 40px;
 }
 
-a.about {
-    font-size: 12px;    
-    line-height: 2px; /* 문장 사이 긴격 */ 
-    letter-spacing: 1.5px; /* 자간 */ 
+.navbar_about a {
+    font-size: 14px;    
+    line-height: 2px;  
+    letter-spacing: 1.5px; 
     color: #ffffff;
     font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
     }
 
-a.about::selection {
-    background-color:#db087c;
-    color: black;
+.navbar_about a:hover {
+    background-color:#d633ff;
 }
 
 
@@ -143,10 +136,35 @@ a.about::selection {
         text-align: center;
     }
 
+    .navbar_message {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        padding: 8px 20px; 
+    }
+
+    .navbar_message li { 
+        width: 100% ; 
+        text-align: center;
+    }
+
+    .navbar_today {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        padding: 8px 20px; 
+    }
+
+    .navbar_today li { 
+        width: 100% ; 
+        text-align: center;
+    }
+
     .navbar_time {
         flex-direction: column; 
         align-items: center; 
         width: 100%;
+        padding: 8px 20px; 
     }
 
     .navbar_time li { 
@@ -158,5 +176,20 @@ a.about::selection {
         justify-content: center; 
         width: 100%; 
         list-style: none; 
+        padding: 8px 20px; 
     }
+}
+
+
+/* footter */
+.footer {
+    position: absolute; 
+    display: flex ;
+    justify-content: space-between ; 
+    align-items : center;
+    background-color: #000000;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 92px;
 }
