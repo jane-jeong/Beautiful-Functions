@@ -1,158 +1,71 @@
 /* --------------------Start of html and body--------------------*/
 html {
-    font-size: 12px;  
+    width: 100%;
+    height: 100%;
+    font-size: 14px;  
+    line-height: 2px; 
+    letter-spacing: 1.5px; 
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
-margin : 0;
-background-size: 80px 80px;
-background-color: #111111;
-background-image:
-    linear-gradient(to right, lightgrey 1px, transparent 1px),
-    linear-gradient(to bottom, lightgrey 1px, transparent 1px); 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-size: 80px 80px;
+    background-color: #111111;
+    background-image:
+        linear-gradient(to right, #777777 1px, transparent 1px),
+        linear-gradient(to bottom, #777777 1px, transparent 1px);
 }
 
 a { text-decoration:none }
 /* --------------------End of html and body--------------------*/
 
-
-/* --------------------Start of navigation bar--------------------*/
+/* --------------------Start of navbar--------------------*/
 .navbar {
+    width: 100%;
+    height: 10%;
     display: flex ; 
-    justify-content: space-between ;
+    justify-content: space-evenly ;
     align-items : center;
+    flex-wrap: wrap; 
     background-color: #000000;
-    height: 92px;
-    padding: 0% 3% 0% 3%;
-}
-
-/* navbar_logo */ 
-
-.navbar_logo { 
     list-style: none; 
-    color: #ffffff; 
 }
 
 .navbar_logo a {
-    font-size: 22px; 
-    line-height: 2px; /* 문장 사이 긴격 */ 
-    letter-spacing: 1.5px; /* 자간 */ 
-    color: rgb(255, 217, 0);
+    font-size: 24px; 
+    color:#55ff71;    /* #8400ff; #cc0070; ##8c00c4; */ 
     font-family: 'Castoro', serif;
     }
 
-.navbar_logo:hover {
-    background-color:#db087c;
-    border-radius: 1px;
+.navbar_logo a:hover {
+    background-color:  #FA1E4B;
 }
-
-/* navbar_message */ 
-.navbar_message {
-    display: flex; 
-    list-style: none; 
-
-}
-
-a.message {
-font-size: 14px;    
-line-height: 2px; 
-letter-spacing: 1.5px; 
-color: #ffffff;
-font-family: 'Noto Sans KR', sans-serif;
-}
-
-a.message::selection {
-    background-color:#ffe600;
-    color: #000000;
-}
-
-/* navbar_today */ 
-.navbar_today {
-    display: flex; 
-    list-style: none; 
-}
-
-.navbar_today li {
-    font-size: 14px;    
-    line-height: 2px; 
-    letter-spacing: 1.5px; 
-    color: #ffffff;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-a#today::selection {
-    background-color:#42ff71;
-    color: #000000;
-}
-
-/* navbar_time */ 
-.navbar_time {
-    display: flex; 
-    list-style: none; 
-    padding-left: 0; 
-}
-
-.navbar_time li {
-    font-size: 14px;    
-    line-height: 2px;  
-    letter-spacing: 1.5px; 
-    color: #ffffff;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-a#counttime::selection {
-    background-color:#00e1ff;
-    color: #000000;
-}
-
-
-/* navbar_about */
-.navbar_about { 
-    list-style: none; 
-    color: #ffffff; 
-    display: flex; 
-}
-
-.navbar_about a {
-    font-size: 14px;    
-    line-height: 2px;  
-    letter-spacing: 1.5px; 
-    color: #ffffff;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
-    }
 
 .navbar_about a:hover {
-    background-color:#8400ff;
-}
-
-/* --------------------Start of footer--------------------*/
-.footer {
-    position: absolute; 
-    display: flex ;
-    justify-content: space-between ; 
-    align-items : center;
-    background-color: #000000;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 92px;
-}
-
-.footer footer {
-    position: absolute;
-    left: 20px;
-    color: #999999;
-    filter: blur(0.1px);
-}
-
-.footer footer small::selection {
-    background-color:#ac52ff;
+    background-color:#55ff71; 
     color: #000000;
 }
-/* -----------------------ENd of footer------------------------*/
 
+.navbar_about a, #today, #timer {
+    color: #ffffff;
+}
+
+#today::selection {
+    background-color: #00e1ff; 
+    color: #000000;
+}
+
+#timer::selection {
+    background-color: yellow;
+    color: #000000;  
+}
+
+
+
+/* --------------------End of navbar--------------------*/
 
 /* -----navbar 반응형 작업----- */
 @media screen and (max-width: 768px) {
@@ -160,81 +73,20 @@ a#counttime::selection {
         flex-direction: column; 
         justify-content: space-evenly;
         align-items: flex;
-        height: 100%;
+        height: 20%;
     }
 
     .navbar_logo {
         align-items: center; 
         width: 100%;
         text-align: center;
-        padding: 5% 0% 2% 0%;
-    }
-    
-    .navbar_message {
-        display: none;
-    }
-        /* flex-direction: column; 
-        align-items: center; 
-        width: 100%;
+        padding: 5% 0% -5% 0%;
     }
 
-    .navbar_message li { 
-        width: 100% ; 
-        text-align: center;
-        padding: 4% 4%;
-    }
-    */
-
-    .navbar_today {
+    #today, #timer, .navbar_about a {
         flex-direction: column; 
         align-items: center; 
         width: 100%;
-    }
-
-    .navbar_today li { 
-        width: 100% ; 
-        text-align: center;
-        padding: 4% 4%;
-    }
-
-    .navbar_time {
-        flex-direction: column; 
-        align-items: center; 
-        width: 100%;
-    }
-
-    .navbar_time li { 
-        width: 100% ; 
-        text-align: center;
-        padding: 5% 5%;
-    }
-
-    .navbar_about {
-        align-items: center;
-        width: 100%; 
-        list-style: none; 
-    }
-
-    .navbar_about a {
-        width: 100% ; 
-        text-align: center;
-        padding: 3% 0% 5% 0%;
-    }
-    
-    .footer {
-        flex-direction: row; 
-        justify-content: center;
-        align-items: center;
-        height: 7%;
-    }
-
-    .footer footer{
-        text-align: center;
-        align-self: center;
     }
 
 }
-/* --------------------End of navigation bar--------------------*/
-
-
-

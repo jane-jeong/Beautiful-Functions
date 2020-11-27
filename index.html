@@ -5,13 +5,17 @@
     <meta charset="utf-8">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jane Jeong">
-    <meta name="description" content="This is a project showroom of Jane Jeong who is designer, developer and data scientist in Seoul, South Korea.">
-    <meta property="og:description" content="This is a project showroom of Jane Jeong who is designer, developer and data scientist in Seoul, South Korea.">
+    <meta name="description" content="This is a project showroom of Jane Jeong.">
+    <meta property="og:description" content="This is a project showroom of Jane Jeong.">
     <meta property="og:image" content="images/og-facebook.png">
     <meta property="og:title" content="Beautiful Functions - Jane Jeong">
     <meta name="twitter:title" content="Beautiful Functions - Jane Jeong">
-    <title> Beautiful Functions - Jane Jeong </title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> Jane Jeong </title>
+    <link rel="shortcut icon" href="bf-favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="bf-favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="bf-favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="bf-favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!--link-->
     <link rel="stylesheet" href="styles/style.css"  type="text/css">
@@ -24,34 +28,26 @@
   </head>
 
   <body>
-    <nav class = "navbar">
+    <nav class="navbar">
 
-      <div class ="navbar_logo">
-        <a href="index.html" title="Go Home"> <em>&#123; &fnof; &#125;</em> </a>
-      </div>
+        <li class= "navbar_logo">
+            <a href="index.html" title="Home"> <em>&#123; &fnof; &#125;</em> </a>
+        </li>
+            
+        <li class="navbar_about">
+          <a href="" > Are curious about me? </a> 
+        </li>
 
-      <div class="navbar_message">
-        <li><a class="message">Welcome here</a></li>
-      </div>
+        <li class="navbar_today">
+            <a id="today"></a>
+        </li>
 
-      <div class="navbar_today">
-        <li><a id="today"></a></li>
-      </div>
-
-      <div class="navbar_time">
-        <li><a id="counttime"></a></li>
-      </div>
-
-      <div class="navbar_about">
-        <a href="" title="Are you curious about me?"> More about author</a> 
-      </div>
-
+        <li class="navbar_timer">
+            <a id="timer"></a>
+        </li>
 
     </nav>
 
-    <div class ="footer">
-      <footer> <small>&copy; 2020. Jane Jeong. All rights reserved.</small> </footer> 
-    </div>
 
   </body>
 </html> 
