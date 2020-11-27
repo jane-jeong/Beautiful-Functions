@@ -24,7 +24,6 @@ a { text-decoration:none }
     align-items : center;
     background-color: #000000;
     height: 92px;
-    filter: blur(0.1px);
     padding: 0% 3% 0% 3%;
 }
 
@@ -172,7 +171,9 @@ a#counttime::selection {
     }
     
     .navbar_message {
-        flex-direction: column; 
+        display: none;
+    }
+        /* flex-direction: column; 
         align-items: center; 
         width: 100%;
     }
@@ -182,6 +183,7 @@ a#counttime::selection {
         text-align: center;
         padding: 4% 4%;
     }
+    */
 
     .navbar_today {
         flex-direction: column; 
