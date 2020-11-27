@@ -25,6 +25,14 @@ a { text-decoration:none }
     background-color: #000000;
     height: 92px;
     filter: blur(0.1px);
+    padding: 0% 3% 0% 3%;
+}
+
+/* navbar_logo */ 
+
+.navbar_logo { 
+    list-style: none; 
+    color: #ffffff; 
 }
 
 .navbar_logo a {
@@ -33,19 +41,8 @@ a { text-decoration:none }
     letter-spacing: 1.5px; /* 자간 */ 
     color: rgb(255, 217, 0);
     font-family: 'Castoro', serif;
-    margin-left: 30px;
     }
 
-.navbar_logo a span {
-    font-size: 22px; 
-    line-height: 2px; /* 문장 사이 긴격 */ 
-    letter-spacing: 1.5px; /* 자간 */ 
-    color: rgb(255, 255, 255);
-    font-family: 'Castoro', serif;
-    margin-left: 30px;
-    }
-    
-/* navbar_logo */ 
 .navbar_logo:hover {
     background-color:#db087c;
     border-radius: 1px;
@@ -116,7 +113,6 @@ a#counttime::selection {
     list-style: none; 
     color: #ffffff; 
     display: flex; 
-    padding-right: 40px;
 }
 
 .navbar_about a {
@@ -131,67 +127,6 @@ a#counttime::selection {
 .navbar_about a:hover {
     background-color:#8400ff;
 }
-
-
-/* -----navbar 반응형 작업----- */
-@media screen and (max-width: 768px) {
-    .navbar { 
-        flex-direction: column; 
-        align-items: flex-start;
-        padding: 8px 24px; 
-    }
-
-    .navbar_logo {
-        flex-direction: column; 
-        align-items: center; 
-        width: 100%;
-        text-align: center;
-    }
-
-    .navbar_message {
-        flex-direction: column; 
-        align-items: center; 
-        width: 100%;
-        padding: 8px 20px; 
-    }
-
-    .navbar_message li { 
-        width: 100% ; 
-        text-align: center;
-    }
-
-    .navbar_today {
-        flex-direction: column; 
-        align-items: center; 
-        width: 100%;
-        padding: 8px 20px; 
-    }
-
-    .navbar_today li { 
-        width: 100% ; 
-        text-align: center;
-    }
-
-    .navbar_time {
-        flex-direction: column; 
-        align-items: center; 
-        width: 100%;
-        padding: 8px 20px; 
-    }
-
-    .navbar_time li { 
-        width: 100% ; 
-        text-align: center;
-    }
-
-    .navbar_about {
-        justify-content: center; 
-        width: 100%; 
-        list-style: none; 
-        padding: 8px 20px; 
-    }
-}
-/* --------------------End of navigation bar--------------------*/
 
 /* --------------------Start of footer--------------------*/
 .footer {
@@ -218,4 +153,86 @@ a#counttime::selection {
     color: #000000;
 }
 /* -----------------------ENd of footer------------------------*/
+
+
+/* -----navbar 반응형 작업----- */
+@media screen and (max-width: 768px) {
+    .navbar { 
+        flex-direction: column; 
+        justify-content: space-evenly;
+        align-items: flex;
+        height: 100%;
+    }
+
+    .navbar_logo {
+        align-items: center; 
+        width: 100%;
+        text-align: center;
+        padding: 5% 0% 2% 0%;
+    }
+    
+    .navbar_message {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+    }
+
+    .navbar_message li { 
+        width: 100% ; 
+        text-align: center;
+        padding: 4% 4%;
+    }
+
+    .navbar_today {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+    }
+
+    .navbar_today li { 
+        width: 100% ; 
+        text-align: center;
+        padding: 4% 4%;
+    }
+
+    .navbar_time {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+    }
+
+    .navbar_time li { 
+        width: 100% ; 
+        text-align: center;
+        padding: 5% 5%;
+    }
+
+    .navbar_about {
+        align-items: center;
+        width: 100%; 
+        list-style: none; 
+    }
+
+    .navbar_about a {
+        width: 100% ; 
+        text-align: center;
+        padding: 3% 0% 5% 0%;
+    }
+    
+    .footer {
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        height: 7%;
+    }
+
+    .footer footer{
+        text-align: center;
+        align-self: center;
+    }
+
+}
+/* --------------------End of navigation bar--------------------*/
+
+
 
