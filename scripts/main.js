@@ -17,10 +17,6 @@ var x = setInterval(function() {
 }, 1000);
 
 
-
-
-
-
 /* Countup Timer */
 // Set the date we're counting down to
 let countDownDate = new Date("Jun 8, 1993 09:05:00").getTime();
@@ -52,8 +48,6 @@ let xx = setInterval(function() {
 }, 1000);
 
 
-
-
 // Web SHare API 
 const shareButton = document.getElementById("button1");
 
@@ -66,7 +60,9 @@ shareButton.addEventListener("click", async () => {
   }
 });
 
+/*
 if (typeof navigator.share === "undefined") {
   // 공유하기 버튼을 지원하지 않는 경우에 대한 폴백 처리
   shareButton.hidden = true;
 }
+*/
