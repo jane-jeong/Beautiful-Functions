@@ -50,3 +50,23 @@ let xx = setInterval(function() {
     document.getElementById("timer").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+
+
+// Web SHare API 
+const shareButton = document.getElementById("button1");
+
+shareButton.addEventListener("click", async () => {
+  try {
+    await navigator.share({ title: "Jane Jeong", url: "https://janejeong.me/" });
+    console.log("Data was shared successfully");
+  } catch (err) {
+    console.error("Share failed:", err.message);
+  }
+});
+
+if (typeof navigator.share === "undefined") {
+  // 공유하기 버튼을 지원하지 않는 경우에 대한 폴백 처리
+  shareButton.hidden = true;
+}
