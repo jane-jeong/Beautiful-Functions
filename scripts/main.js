@@ -60,9 +60,7 @@ shareButton.addEventListener("click", async () => {
   }
 });
 
-/*
 if (typeof navigator.share === "undefined") {
-  // 공유하기 버튼을 지원하지 않는 경우에 대한 폴백 처리
+  // 공유하기 버튼을 지원하지 않는 경우에 대한 폴백 처리 (데스크탑)
   shareButton.hidden = true;
 }
-*/
