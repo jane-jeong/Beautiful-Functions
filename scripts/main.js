@@ -37,13 +37,16 @@ let xx = setInterval(function() {
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("timer").innerHTML = "Since my birth : " + days + "d " + hours + "h "
+  document.title.innerHTML = "Since my birth : " + days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
+
+  document.getElementsByTagName('title')[0].innerHTML =  days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(xx);
     document.getElementById("timer").innerHTML = "EXPIRED";
+    document.title.innerHTML = "EXPIRED";
   }
 }, 1000);
 
