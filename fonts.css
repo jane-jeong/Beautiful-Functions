@@ -3,18 +3,3 @@
 /* font-family: 'Noto Sans KR', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 /* font-family: 'Noto Serif KR', serif; */
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-/* font-family: 'Black Han Sans', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
-/* font-family: 'Song Myung', serif; */ 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;600;700&display=swap');
-/* font-family: 'JetBrains Mono', monospace; */
-
-
-/* nanum-maru-buri - korean */
-@font-face {
-    font-family: 'MaruBuri-Regular';
-    src: local(''),
-         url('/fonts/MaruBuri-Regular.woff') format('woff'), /* Modern Browsers */
-         url('/fonts/MaruBuri-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-}
