@@ -1,58 +1,130 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!--meta data-->
-    <meta charset="utf-8">
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jane Jeong">
-    <meta name="description" content="Hello. I'm Jane Jeong🚀">
-    <meta property="og:description" content="Hello. I'm Jane Jeong🚀">
-    <meta property="og:image" content="images/OG-functions.png">
-    <meta property="og:title" content="Jane Jeong">
-    <meta name="twitter:title" content="Jane Jeong">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Jane Jeong </title>
-    <link rel="shortcut icon" href="bf-favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="bf-favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="bf-favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="bf-favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <!--link-->
-    <link rel="stylesheet" href="styles/style.css"  type="text/css">
-    <script defer src = "scripts/main.js"></script>
-    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Crimson+Pro:wght@700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Song+Myung&display=swap" rel='stylesheet' type='text/css'>
-    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-
-  </head>
-
-  <body>
-    <nav class="navbar">
-
-        <li class= "navbar_logo">
-            <a href="index.html" title="Home"> <em>&#123; &fnof; &#125;</em> </a>
-        </li>
-            
-        <li class="navbar_about">
-          <a href="" > Are you curious about me? </a> 
-        </li>
-
-        <li class="navbar_today">
-            <a id="today"></a>
-        </li>
-
-        <li class="navbar_timer">
-            <a id="timer"></a>
-        </li>
-
+    <link rel="stylesheet" href="index.css"  type="text/css">
+    <link rel="stylesheet" href="/modules/dark-mode.css"  type="text/css">
+</head>
+<body>
+    <nav> 
+        <div class="logo"> <a href="index.html">Jane Jeong</a> </div>
+        <div class="darkmode">
+            <input type = "checkbox" class = "checkbox" id="checkbox">
+            <label for = "checkbox" class = "label"> 
+                <div class = "moon"> </div>
+                <div class = "sun"> </div>
+            </label> 
+        </div>
     </nav>
+    <div class="body-wrap">
 
-    <footer> 
-      <small>&copy; 2020. Jane Jeong. All rights reserved.</small> 
-    </footer> 
+        <section class="card-container">
+            <a href="content_main.html" class="card">
+                <span class="card-image-container">
+                    <img src="/images/feather-blue.jpg" class="card-image"/>
+                </span>
+                <span class="card-article">
+                    <h2 class>Main Project</h2>
+                    <p class>December 27, 2020</p> 
+                </span>
+            </a> 
+        </section>
 
-  </body>
-</html> 
+        <section class="blog">
+            <div class="section-content">
+                <h2 class="section-head"> Projects </h2>
+                <ul class="section-tiles">
+                    <li class="tile-item-list">
+                        <a href="content1.html" class="title-link">
+                            <div class="title-media">
+                                <div class="image"></div>
+                            </div>
+                            <div class="title-description">
+                                <div class="title-head">
+                                    <div class="title-category"> <h2>First Project</h2> </div>
+                                    <div class="title-headline"> <p>Machine Learning</p> </div>
+                                </div>
+                                <div class="title-timestamp"> <p>December 27, 2020</p> </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tile-item-list">
+                        <a href="" class="title-link">
+                            <div class="title-media">
+                                <div class="image"></div>
+                            </div>
+                            <div class="title-description">
+                                <div class="title-head">
+                                    <div class="title-category"></div>
+                                    <div class="title-headline"></div>
+                                </div>
+                                <div class="title-timestamp"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tile-item-list">
+                        <a href="" class="title-link">
+                            <div class="title-media">
+                                <div class="image"></div>
+                            </div>
+                            <div class="title-description">
+                                <div class="title-head">
+                                    <div class="title-category"></div>
+                                    <div class="title-headline"></div>
+                                </div>
+                                <div class="title-timestamp"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tile-item-list">
+                        <a href="" class="title-link">
+                            <div class="title-media">
+                                <div class="image"></div>
+                            </div>
+                            <div class="title-description">
+                                <div class="title-head">
+                                    <div class="title-category"></div>
+                                    <div class="title-headline"></div>
+                                </div>
+                                <div class="title-timestamp"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tile-item-list">
+                        <a href="" class="title-link">
+                            <div class="title-media">
+                                <div class="image"></div>
+                            </div>
+                            <div class="title-description">
+                                <div class="title-head">
+                                    <div class="title-category"></div>
+                                    <div class="title-headline"></div>
+                                </div>
+                                <div class="title-timestamp"></div>
+                            </div>
+                        </a>
+                    </li>
 
 
+
+                </ul>
+            </div>
+        </section>
+
+
+
+        <footer> 
+            <small> copyright. Jane Jeong. </small> 
+        </footer>
+    </div>
+
+
+
+</body>
+
+<script defer src = "index.js"></script>
+<script defer src = "modules/dark-mode.js"></script>
+
+</html>

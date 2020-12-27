@@ -1,0 +1,19 @@
+{
+  "name": "janejeong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jane-jeong/janejeong.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jane-jeong/janejeong/issues"
+  },
+  "homepage": "https://github.com/jane-jeong/janejeong#readme"
+}
