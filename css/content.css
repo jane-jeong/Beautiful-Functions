@@ -26,14 +26,14 @@ body {
 
 .content-header {
     width: 100%; 
-    margin-top: 208px;
-    margin-bottom: 104px; 
+    margin-top: 128px;
+    margin-bottom: 72px; 
     text-align: center;
     font-size: 2em;
 }
 
 .content-main-image {
-    width: 60%;
+    width: 70%;
     margin-top: 52px;
     margin-bottom: 52px;
 }
@@ -53,19 +53,50 @@ body {
 
 .content-text {
     position: relative;
-    width: 653px;
+    width: 720px;
 }
 
 
 /* Responsive */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
 
+    .content-main-image {
+        width: 724px;
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+    }
+    
+    .content-main-image img {
+        width: 100%; 
+        border-radius: 16px;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .content-header {
+        margin-top: 96px;
+        margin-bottom: 32px; 
+        font-size: 1.5em;
+    }
+    
+    .content-main-image {
+        width: 100%;
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+    }
+    
+    .content-main-image img {
+        width: 100%; 
+        border-radius: 16px;
+    }
 
 }
 
 @media screen and (max-width: 650px) {
-   
+
     .content-text {
         width: 100%; 
         margin: 1.5em;
