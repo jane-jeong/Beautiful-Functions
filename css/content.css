@@ -1,0 +1,74 @@
+@import 'base.css';
+@import 'fonts.css';
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 5%; 
+}
+
+/* body */
+.article {
+    position: absolute;
+    top: 0;
+    width: 100%; 
+    padding-bottom: 20%;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+}
+
+.content-header {
+    width: 100%; 
+    margin-top: 208px;
+    margin-bottom: 104px; 
+    text-align: center;
+    font-size: 2em;
+}
+
+.content-main-image {
+    width: 60%;
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+
+.content-main-image img {
+    width: 100%; 
+    border-radius: 16px;
+}
+
+.content-body {
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start;
+    flex-wrap: wrap; 
+}
+
+.content-text {
+    position: relative;
+    width: 653px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 900px) {
+
+
+}
+
+@media screen and (max-width: 650px) {
+   
+    .content-text {
+        width: 100%; 
+        margin: 1.5em;
+    }
+
+}

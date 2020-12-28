@@ -4,37 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Jane Jeong </title>
-    <link rel="stylesheet" href="index.css"  type="text/css">
+    <link rel="stylesheet" href="/css/index.css"  type="text/css">
     <link rel="stylesheet" href="/modules/dark-mode.css"  type="text/css">
+    <script defer src = "index.js"></script>
+    <script defer src = "modules/dark-mode.js"></script>
+    <link rel="icon" href="/fav/favicon.ico">
 </head>
+<nav class="navigation"> 
+    <div class="logo"> 
+        <a href="index.html">Jane Jeong</a> 
+    </div>
+</nav>
 <body>
-    <nav> 
-        <div class="logo"> <a href="index.html">Jane Jeong</a> </div>
-        <div class="darkmode">
-            <input type = "checkbox" class = "checkbox" id="checkbox">
-            <label for = "checkbox" class = "label"> 
-                <div class = "moon"> </div>
-                <div class = "sun"> </div>
-            </label> 
-        </div>
-    </nav>
-    <div class="body-wrap">
-
-        <section class="card-container">
-            <a href="content_main.html" class="card">
-                <span class="card-image-container">
-                    <img src="/images/feather-blue.jpg" class="card-image"/>
-                </span>
-                <span class="card-article">
-                    <h2 class>Main Project</h2>
-                    <p class>December 27, 2020</p> 
-                </span>
-            </a> 
+    <div class="featured-wrap">
+        <section class="featured">
+            <h2 class="section-head">Featured Projects</h2>
+            <div class="featured-content">
+                <div id="featured" class="gallery-container">
+                    <ul class="item-container">
+                        <li id="featured-0"></li>
+                    </ul>
+                </div>
+            </div>
         </section>
-
-        <section class="blog">
+    </div>
+    <div class="project-wrap">
+        <section class="project">
+            <h2 class="section-head"> Small Projects </h2>
             <div class="section-content">
-                <h2 class="section-head"> Projects </h2>
                 <ul class="section-tiles">
                     <li class="tile-item-list">
                         <a href="content1.html" class="title-link">
@@ -112,19 +109,11 @@
                 </ul>
             </div>
         </section>
-
-
+    
 
         <footer> 
             <small> copyright. Jane Jeong. </small> 
         </footer>
     </div>
-
-
-
 </body>
-
-<script defer src = "index.js"></script>
-<script defer src = "modules/dark-mode.js"></script>
-
 </html>
